@@ -4,6 +4,21 @@ Personal configuration files managed with [GNU Stow](https://www.gnu.org/softwar
 
 This repository tracks a small set of terminal-focused tools and links them into `$HOME` with symlinks instead of copying files around.
 
+## Table of Content
+
+<!--toc:start-->
+- [dotfiles](#dotfiles)
+  - [Table of Content](#table-of-content)
+  - [Contents](#contents)
+  - [Repository Layout](#repository-layout)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Conflicts](#conflicts)
+  - [Updating](#updating)
+  - [Uninstall](#uninstall)
+  - [Notes](#notes)
+<!--toc:end-->
+
 ## Contents
 
 - Git configuration
