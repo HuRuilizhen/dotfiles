@@ -89,10 +89,10 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 
 # Preferred visual for local and remote sessions
-VISUAL='nvim'
+export VISUAL='nvim'
 
 # Preferred editor for local and remote sessions
-EDITOR='nvim'
+export EDITOR='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
