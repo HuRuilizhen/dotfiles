@@ -159,6 +159,9 @@ function y() {
 	command rm -f -- "$tmp"
 }
 
+# ---- lazygit ----
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # ---- load local config ----
 if [[ -f "$HOME/.zshrc.local" ]]; then
     source "$HOME/.zshrc.local"
