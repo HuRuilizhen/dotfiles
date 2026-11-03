@@ -10,6 +10,25 @@ config-version = 2
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = []
 
+on-window-detected = [
+    {
+        if = 'test %{app-bundle-id} = com.tencent.codebuddycn',
+        run = ['macos-native-fullscreen on', 'move-node-to-workspace C'],
+    },
+    {
+        if = 'test %{app-bundle-id} = org.mozilla.firefox',
+        run = ['macos-native-fullscreen on', 'move-node-to-workspace B'],
+    },
+    {
+        if = 'test %{app-bundle-id} = net.kovidgoyal.kitty',
+        run = ['macos-native-fullscreen on', 'move-node-to-workspace T'],
+    },
+    {
+        if = 'test %{app-bundle-id} = com.microsoft.VSCode',
+        run = ['macos-native-fullscreen on', 'move-node-to-workspace V'],
+    },
+]
+
 # Start AeroSpace at login
 start-at-login = true
 
@@ -50,7 +69,7 @@ automatically-unhide-macos-hidden-apps = false
 # even when they are invisible.
 # This config option is only available since 'config-version = 2'
 # Fallback value (if you omit the key): persistent-workspaces = []
-persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "C", "B", "T", "V"]
 
 # A callback that runs every time binding mode changes
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -137,6 +156,10 @@ gaps.outer.right =      0
     alt-7 = 'workspace 7'
     alt-8 = 'workspace 8'
     alt-9 = 'workspace 9'
+    alt-c = 'workspace C'
+    alt-b = 'workspace B'
+    alt-t = 'workspace T'
+    alt-v = 'workspace V'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
