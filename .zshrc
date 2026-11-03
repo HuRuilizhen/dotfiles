@@ -94,6 +94,11 @@ export VISUAL='nvim'
 # Preferred editor for local and remote sessions
 export EDITOR='nvim'
 
+# Brew Shell Completion
+eval "$(brew shellenv)"
+autoload -Uz compinit
+compinit
+
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
